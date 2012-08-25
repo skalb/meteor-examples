@@ -1,6 +1,6 @@
 should = require('should')
 Backbone = require('backbone')
-SampleRouterFactory = require('../client/sample_router_factory').SampleRouterFactory
+SampleRouterFactory = require('../client/lib/sample_router_factory').SampleRouterFactory
 
 describe "SampleRouter", ->
   factory = new SampleRouterFactory(Backbone)
