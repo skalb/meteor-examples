@@ -1,14 +1,15 @@
 root = exports ? this
 
 class SampleRouterFactory
-  constructor: (@Backbone) ->
+  constructor: (@Backbone, @Items) ->
 
   getRouter: () ->
     SampleRouter = @Backbone.Router.extend(
       routes:
         "": "index"
 
-      index: ->
+      index: =>
+        items = @Items.find()
     )
     new SampleRouter
 

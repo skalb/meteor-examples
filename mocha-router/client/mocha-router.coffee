@@ -1,3 +1,4 @@
 Meteor.startup -> 
   factory = new SampleRouterFactory(Backbone)
-  router = factory.getRouter(Backbone)
+  items = new Meteor.Collection("items")
+  router = factory.getRouter(Backbone, items)
